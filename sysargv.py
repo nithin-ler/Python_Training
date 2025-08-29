@@ -9,17 +9,17 @@ tot=0
 k=len(sys.argv)
 print("Size  =" , k)
 print(sys.argv[1])
-# max = 0
-# min = math.inf
-# for i in range(3,k):
-#     tmp = sys.argv[i]
-#     if tmp>max:
-#         max = tmp
-#     if tmp<min:
-#         min = tmp
+max = 0
+min = math.inf
+for i in range(2,k):
+    tmp = int(sys.argv[i])
+    if tmp>max:
+        max = tmp
+    if tmp<min:
+        min = tmp
 
-#     tot=tot+ int(sys.argv[i])
+    tot=tot+ int(sys.argv[i])
  
-# print("Total  =" , tot)
-# print("Min =",min)
-# print("Max =",max)
+print("Total  =" , tot)
+print("Min =",min)
+print("Max =",max)
